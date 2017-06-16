@@ -1,0 +1,147 @@
+* { 
+	margin: 0;
+	padding: 0;
+/* Above gives total control of margins pushing them to absolute edge of web page.
+*/
+	box-sizing: border-box;
+}
+/*start with clean ordering; within the body. use tags or ids to label each indication*/
+body {
+	color: #777777;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	background-image: url('../images/pink_rice.png');
+}
+
+/*make a sample border to see what is being surrounded.*/ 
+header {
+	background-color: #ffffff;
+	 width: 100%;
+	height: 92px;
+	
+}
+
+.mainlogonav {
+	width: 960px;
+	height: 96px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: #dddddd;
+}
+
+.linkborder {
+	border-right: 2px solid #dddddd;
+	padding-right: 5px
+
+}
+
+/*This is an id, specifying changes in the header area*/
+/*float left to move the nameplate to the left, isolating it there.*/
+#main-logo {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	float: left;
+	height: 92px;
+	padding: 30px;
+}
+ /*nav font within the header, but not the name one specified in body*/
+/*float: right to move the nave to the right within the header, only*/
+nav {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	float: right;
+	overflow: auto;
+	padding-top: 50px
+}
+
+/*clear both to move what's inside (section and aside) together, as a whole MAIN container*/
+/*margin: 0 to prevent margin space between top and bottom and auto to make sure the margin will squeeze everthing accordingly when the window is made smaller*/
+main {
+	width: 960px;
+	clear: both;
+	margin: 0 auto;
+}
+/*about me area ONLY* but it's also in the Main*/
+section {
+	width: 650px;
+	margin-right: 40px;
+	display: inline-block;
+	padding-left: 6px;
+}
+#sectionborder {
+	border-bottom: 2px solid #dddddd;
+	margin-right: 8px;
+}
+
+/*includes the fonts in section and aside, not the color of the box*/
+section h2, aside h4 {
+	color: #4aaaa5;
+}
+
+section, aside {
+	border: 5px solid #dddddd;
+	background-color: #ffffff;
+}
+/*float right to get it from on top of about me in fir first page*/
+aside {
+	width: 270px;
+	float: right;
+	height: 150px
+}
+
+#bottomborder {
+	border-bottom: 1px solid #dddddd;
+}
+
+
+/*included font change in only the paragraph*/
+p {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/*one number accounts for all sides*/
+aside img {
+	width: 60px;
+	margin: 30px 10px;
+}
+
+footer {
+	background-color: #666666;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	text-align: center;
+	clear: both;
+	height: 96px;
+	padding-top: 35px;
+}
+
+
+/*portfolio section*/
+
+
+img {
+	width: 30%;
+	float: left
+}
+
+.bpdock, .la, .palmtrees, .playwin, .womanonboat .nightphoto {
+	float: none;
+	clear: none;
+}
+
+/* Assignment One Instructions*/
+
+@media only screen and (min-width: 980px) {
+    section {
+    	width: 450px;
+}
+@media only screen and (max-width: 768px) {
+	.custom-footer {
+	background-color: blue;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+   img {
+	width: 80%;
+}
