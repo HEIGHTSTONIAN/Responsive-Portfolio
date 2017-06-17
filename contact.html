@@ -1,62 +1,63 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 	<head>
+<!--This is the code to connect the media queries from the css page. name is -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Rachel Estrada</title>
 		<!--href is path to style sheet-->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 	<body>
 		<header>
-			<h2 id="main-logo">Rachel Estrada</h2>
-			<nav>
-				<a href="index.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-
+			<div class="mainlogonav">
+				<h2 id="main-logo">Rachel Estrada</h2>
+				<nav>
+<!--I made a linkborder class only for the two left link words to put a border on the right -->
+					<a class="linkborder" href="index.html">About</a>
+					<a class="linkborder" href="portfolio.html">Portfolio</a>
+					<a href="contact.html">Contact</a>
+				</nav>
+			</div>
 		</header>
 
 		<main>
 			<aside>
 				<h4 id="bottomborder">Connect with Me</h4>
-				<a href="https://github.com/HEIGHTSTONIAN">
-					<img src="assets/images/githubicon.png"/>
-				</a>
-				<a href="https://www.linkedin.com/in/rachel-estrada-554636144">
-					<img src="assets/images/linkedinicon.png"/>
-				</a>
-				<a href="https://stackoverflow.com/users/8099474/rachel-estrada-heightstonian"/>
-					<img src="assets/images/stackoverflowicon.png"/>
-				</a>
+<!--create class for connect w me icons to only make changes to those isolated images -->				
+					<a href="https://github.com/HEIGHTSTONIAN">
+						<img src="assets/images/githubicon.png"/>
+					</a>
+					<a href="https://www.linkedin.com/in/rachel-estrada-554636144">
+						<img src="assets/images/linkedinicon.png"/>
+					</a>
+					<a href="https://stackoverflow.com/users/8099474/rachel-estrada-heightstonian"/>
+						<img src="assets/images/stackoverflowicon.png"/>
+					</a>
 			</aside>
 			<section>
 				<h2 id="sectionborder">Contact</h2>
 					<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+<!--This is the form code div'ed to specify size and the submit button is the one with a class for designing it in css. i copied the code and adjusted margins here, but it was all one unit with divs so I kept it altogether.-->
 					<div class="row">
 						<label for="name">Name</label><br />
-							<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+							<input id="name" class="input" name="name" type="text" value="" size="50" /><br />
 					</div>
 					<div class="row">
 						<label for="email">Email</label><br />
-							<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+							<input id="email" class="input" name="email" type="text" value="" size="50" /><br />
 					</div>
 					<div class="row">
-						<label for="email">Message</label><br />
-							<input id="email" class="input" name="email" type="text" value="" size="50" /><br />
+						<label for="message">Message</label><br />
+							<input id="message" class="input" name="email" type="text" value="" size="50" /><br />
+					</div>
+
+					<div>
+					<input id="submitbutton" type="submit" value="Submit">
 					</div>
 			</section>
 		</main>
-
-		<footer>&copy Copyright 2016 Rachel Estrada</footer>
 	
-
-	<form action="">
-First name:<br>
-<input type="text" name="firstname" value="Jane">
-<br>
-Last name:<br>
-<input type="text" name="lastname">
-</form>
-
+		<footer class="custom-footer">&copy Copyright 2016 Rachel Estrada</footer>
+	
 	</body>
 </html>
