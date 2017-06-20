@@ -57,7 +57,8 @@ nav {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	display: inline-block;
 	overflow: auto;
-	padding-top: 22px
+	padding-top: 22px;
+	float: right;
 }
 
 /*clear both to move what's inside (section and aside) together, as a whole MAIN container*/
@@ -184,72 +185,50 @@ img {
 
 
 @media screen and (max-width: 768px) {
-	header { 
-   	
-   }
-{
 	
+	header { 
+   	width: 100%;
+   }
+
+   main {
+   	width: 90%;
+   	min-width: 641px;
    } 
-
+	.mainlogonav	{
+		width: 90%;
+		margin: 0 auto;
+	}
 	#main-logo {
-	width: 100%;
-	text-align: center;
-	padding-top: 30px
+		padding-top: 25px;
 	}
+   	#linkborder {
+   		text-orientation: right;
+   	}
 
-	#navalone {
-	padding-bottom: 0%;
+	section {
+		width: 100%;
 	}
-
-	#linkborder {
-	text-align: center;
-	}
-
-   .mainlogonav  {
-	width: 100%;
-	text-align: center;
- 	}  
-
-   header { 
-   	width: 100%;
-   	padding-bottom: 26%;
-   }
-
-	section { 
-   	width: 61%;
-   	margin-left: 19px;
-   }
-
-	#profileimage {
-	width: 100%;
-	}
-
    	aside {
-   	width: 61%;
-   	margin-left: 20px;
-   }
-
-	aside {
-	float: none;
-	margin-top: 20px;	
-	}
-   
-   .custom-footer {
-   	width: 100%;
-   }
-
-}
-}
+	/*again, i need the width to take 100 percent of it's own space in the main container.*/
+    margin: 0 auto;
+    margin-top: 25px;
+    float: none;
+    width: 100%;
+    } 
 
 
-
+/*WORK ABOVE THIS LINE*/
 
 @media only screen and (max-width: 640px) {
-  {
-	
-
+  
+	nav {
+		float: none;
+	}
+	main {
+	/*width 100% allows the main to go wall to wall; 90% would give it a psuedo margin bc it's not a margin, but just how much space i want for it to occupy the main container; SEE SECTION WIDTH COMMENT*/
    	width: 100%;
-   	text-align: center;
+   	/*min width to set a parameter for a clean look between min width and declared max-width.*/
+ 	min-width: 400px;
    } 
 
 	#main-logo {
@@ -269,27 +248,25 @@ img {
    .mainlogonav  {
 	width: 100%;
 	text-align: center;
-	
- 	}  
+	}  
 
    header { 
    	width: 100%;
    	padding-bottom: 26%;
-   	background-color: red;
    }
 
 	section { 
-   	width: 61%;
-   	margin-left: 19px;
+   	width: 100%;
+/*this width: 100% is set to say I want the responsiveness to stay wall to wall and no content leaves the screen when i move the window within declared parameters of 400 and 640.*/
    }
 
 	#profileimage {
 	width: 100%;
 	}
 
+/*making the aside width: 100% keeps it wall to wall too. I could make it 90% which would give it margin looking space within the main container, but i don't want to.*/
    	aside {
-   	width: 61%;
-   	margin-left: 20px;
+   	width: 100%;
    }
 
 	aside {
