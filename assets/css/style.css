@@ -5,11 +5,15 @@
 */
 	box-sizing: border-box;
 }
-/*start with clean ordering; within the body. use tags or ids to label each indication*/
+/*start with clean ordering; within the body. use tags or ids to label each indication
+MAJOR!! >> overflow-x: hidden gets rid of the HORIZONTAL scroll bar but it has to be in the body so all WITHIN THE BODY will be included*/
+
 body {
 	color: #777777;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	background-image: url('../images/pink_rice.png');
+/*overflow-x: hidden gets rid of the scroll bar. i saved a reminder link in learning code */;
+	overflow-x: hidden;
 }
 
 /*make a sample border to see what is being surrounded.*/ 
@@ -45,15 +49,15 @@ a {
 	color: #ffffff;
 	float: left;
 	height: 92px;
-	padding: 30px;
+	padding: 5px;
 }
  /*nav font within the header, but not the name one specified in body*/
 /*float: right to move the nave to the right within the header, only*/
 nav {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	float: right;
+	display: inline-block;
 	overflow: auto;
-	padding-top: 50px
+	padding-top: 22px
 }
 
 /*clear both to move what's inside (section and aside) together, as a whole MAIN container*/
@@ -67,7 +71,7 @@ main {
 /*about me area ONLY* but it's also in the Main*/
 section {
 	width: 650px;
-	margin-right: 40px;
+	margin-right: 0px;
 	display: inline-block;
 	padding-left: 6px;
 	line-height: 2;
@@ -172,20 +176,134 @@ img {
 
 
 /* Assignment One Instructions*/
-/*
 @media only screen and (min-width: 980px) {
-    section {
-    	width: 450px;
-}
-@media only screen and (max-width: 768px) {
-	.custom-footer {
-	background-color: blue;
+ 
+
+ }
+
+
+
+@media screen and (max-width: 768px) {
+	header { 
+   	
+   }
+{
+	
+   } 
+
+	#main-logo {
+	width: 100%;
+	text-align: center;
+	padding-top: 30px
 	}
+
+	#navalone {
+	padding-bottom: 0%;
+	}
+
+	#linkborder {
+	text-align: center;
+	}
+
+   .mainlogonav  {
+	width: 100%;
+	text-align: center;
+ 	}  
+
+   header { 
+   	width: 100%;
+   	padding-bottom: 26%;
+   }
+
+	section { 
+   	width: 61%;
+   	margin-left: 19px;
+   }
+
+	#profileimage {
+	width: 100%;
+	}
+
+   	aside {
+   	width: 61%;
+   	margin-left: 20px;
+   }
+
+	aside {
+	float: none;
+	margin-top: 20px;	
+	}
+   
+   .custom-footer {
+   	width: 100%;
+   }
+
 }
+}
+
+
+
 
 @media only screen and (max-width: 640px) {
-   img {
-	width: 80%;
+  {
+	
+
+   	width: 100%;
+   	text-align: center;
+   } 
+
+	#main-logo {
+	width: 100%;
+	text-align: center;
+	padding-top: 30px
+	}
+
+	#navalone {
+	padding-bottom: 0%;
+	}
+
+	#linkborder {
+	text-align: center;
+	}
+
+   .mainlogonav  {
+	width: 100%;
+	text-align: center;
+	
+ 	}  
+
+   header { 
+   	width: 100%;
+   	padding-bottom: 26%;
+   	background-color: red;
+   }
+
+	section { 
+   	width: 61%;
+   	margin-left: 19px;
+   }
+
+	#profileimage {
+	width: 100%;
+	}
+
+   	aside {
+   	width: 61%;
+   	margin-left: 20px;
+   }
+
+	aside {
+	float: none;
+	margin-top: 20px;	
+	}
+   
+   .custom-footer {
+   	width: 100%;
+   }
+
 }
 
-*/
+
+    
+
+
