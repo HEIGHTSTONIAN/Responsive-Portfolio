@@ -177,12 +177,46 @@ img {
 
 
 /* Assignment One Instructions*/
-@media only screen and (min-width: 980px) {
+@media only screen and (max-width: 980px) {
  
-
+header {
+ 	width: 100%;
  }
 
+.mainlogonav {
+	width: 90%;
+}
 
+main {
+	width: 90%;
+}
+
+section {
+	width: 50%;
+}
+
+.input {
+	width: 100%;
+}
+
+.name
+#linkborder {
+   	text-orientation: right;
+}
+
+#profileimage {
+	width: 98%;
+}
+aside {
+	width: 40%;
+ 	float: right;
+ }
+
+.smicons {
+	margin: 0 auto;
+	width: 100%;
+}
+}
 
 @media screen and (max-width: 768px) {
 	
@@ -216,8 +250,6 @@ img {
     width: 100%;
     } 
 
-
-/*WORK ABOVE THIS LINE*/
 
 @media only screen and (max-width: 640px) {
   
