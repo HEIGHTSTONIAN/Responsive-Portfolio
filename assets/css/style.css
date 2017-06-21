@@ -287,6 +287,13 @@ aside {
    	padding-bottom: 26%;
    }
 
+	 /*I've tried everything on this to get the words on the photos and the sizes to changes... Moving on.*/ 
+	.nightphoto, .womanonboat, .bpdock, .palmtrees, .playwin, .la {
+	width: 100%;
+	float: none;	
+
+}
+	
 	section { 
    	width: 100%;
 /*this width: 100% is set to say I want the responsiveness to stay wall to wall and no content leaves the screen when i move the window within declared parameters of 400 and 640.*/
